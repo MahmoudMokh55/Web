@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.hero-bg{
+    background: #ffffff url(../images/healthy-food-background_23-2148123792.jpg);
+   color: white;
+   font-weight: bolder;
+   padding: 15px;
+  
+}
+.top{
+    animation: fade 3s ;
+}
+@keyframes
+    fade{
+ form{
+     opacity: 0;
+     transform: translateY(-2em);
+ }
+ to{
+     opacity: 1;
+     transform: translateY(0);
+ }
+    }
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+h1 span{
+font-size: 1.4rem;
+text-transform: uppercase;
+display: block;
+}
+h1{
+    margin: 1.5em 1em 1em 1em ;
+}
+.form-container{
+    background-color: white;
+    margin: 0 -2em;
+    padding: 2em;
+}
+label{
+    color: black;
+    display: block;
+}
+form p{
+    color: gray;
+}
+input[type=submit] {
+    background-color:#f19139;
+    color: white;
+    border-radius: 0.5em;
+    border: transparent;
+    padding: 1.2em;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+input[type=text]{
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 1.5em;
+}
+img{
+    width: 100%;
+
+}
+
+@media (main-width:700px){
+    .authentic{
+        display: flex;
+
+}
+img{
+    width: 50%;
+}
+form{
+    display: flex;
+}
+input[type=submit]{
+    width: 50%;
+}
+.left{
+    width: 50%;
+}
