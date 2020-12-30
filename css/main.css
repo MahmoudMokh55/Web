@@ -4,6 +4,7 @@
    color: white;
    font-weight: bolder;
    padding: 15px;
+   background-position: center;
   
 }
 .top{
@@ -49,14 +50,17 @@ label{
 form p{
     color: gray;
 }
-input[type=submit] {
-    background-color:#f19139;
+input[type=button] {
+    background-color:#8f2323;
     color: white;
     border-radius: 0.5em;
     border: transparent;
     padding: 1.2em;
     font-size: 1.2rem;
     font-weight: bold;
+}
+input[type=button]:hover{
+    background-color: darkred;
 }
 input[type=text]{
     border-radius: 0.5em;
@@ -70,13 +74,14 @@ img{
 
 }
 
-@media (main-width:700px){
+
+@media(min-width:650px){
     .authentic{
         display: flex;
-
-}
-img{
-    width: 50%;
+        flex-direction: row-reverse;
+    }
+    img{
+        width: 50%;
 }
 form{
     display: flex;
@@ -86,4 +91,33 @@ input[type=submit]{
 }
 .left{
     width: 50%;
+}
+}
+.overlay{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+}
+.animate-overlay {
+    animation: overlay 3s forwards;
+}
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

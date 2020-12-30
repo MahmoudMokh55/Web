@@ -7,26 +7,29 @@
     <title>Food</title>
 </head>
 <body>
+    <div class="overlay" id="overlay">
+        <h3>Searchind Now...</h3>
+    </div> 
     <div class="hero-bg">
         <div class="top">
-        <header>
-            <a href="#">yummy.eats</a>
-            </header>
-            <div class="hero-heading">
-                <h1><span>The Healthy</span> Eating Experience</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt quaerat at explicabo culpa minus temporibus suscipit aliquam dolorum nostrum.</p>
+            <header>
+                <a href="#">yummy.eats</a>
+                </header>
+                <div class="hero-heading">
+                    <h1><span>The Healthy</span> Eating Experience</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt quaerat at explicabo culpa minus temporibus suscipit aliquam dolorum nostrum.</p>
+                </div>
+                <div class="form-container">
+                <form action="">
+                    <div class="left">
+                            <label for="">Enter Your City:</label>
+                            <input type="text" name="City" id="City">
+                            <p>Example:"San Diego"</p>
+                        </div>
+                        <input type="button" value="Find food now" onclick="find_city()">
+                </form>
+                </div>
             </div>
-            <div class="form-container">
-            <form action="">
-                <div class="left">
-                        <label for="">Enter Your City:</label>
-                        <input type="text" name="City" id="City">
-                        <p>exaple:"san diego"</p>
-                    </div>
-                    <input type="submit" value="Find food now">
-            </form>
-            </div>
-        </div>
     </div>
     <div class="authentic">
 <div class="authentiv-right">
@@ -36,5 +39,20 @@
 </div>
 <img src="images/cd5f25899b453613ca7cb865cfb87f0e.jpg" alt="A bowl with food">
     </div>
+    <script>
+      function find_city(){
+          city= document.getElementById("city").value;
+          console.log(city);
+          overlay = document.getElementById("overlay");
+          console.log(overlay);
+          overlay.style.display="grid";
+          overlay.classlist.add('animate-overlay');
+          fetch(url,{
+
+          })
+          .then()
+          .catch((error)=>{})
+      }
+    </script>
 </body>
 </html>
