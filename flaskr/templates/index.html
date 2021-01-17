@@ -23,7 +23,7 @@
                 <form action="">
                     <div class="left">
                             <label for="">Enter Your City:</label>
-                            <input type="text" name="City" id="City">
+                            <input type="text" name="City" id="city">
                             <p>Example:"San Diego"</p>
                         </div>
                         <input type="button" value="Find food now" onclick="find_city()">
@@ -46,7 +46,7 @@
           overlay = document.getElementById("overlay");
           console.log(overlay);
           overlay.style.display="grid";
-          overlay.classlist.add('animate-overlay');
+          overlay.classList.add('animate-overlay');
           fetch(url,{
 
           })

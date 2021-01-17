@@ -73,7 +73,28 @@ img{
     width: 100%;
 
 }
-
+@media(min-width:650px){
+}
+@media(min-width:850px){
+    .form-container{
+        width: 44%;
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    }
+    input[type=button]{
+        padding: 2px;
+        margin: 1em;
+    }
+    input[type=button]{
+        border-radius: 1em;
+        width: 40%;
+        padding: 5px;
+        margin: 2em;
+        margin-top: 1.5em;
+    }
+}
 
 @media(min-width:650px){
     .authentic{
@@ -85,6 +106,7 @@ img{
 }
 form{
     display: flex;
+    width: 50;
 }
 input[type=submit]{
     width: 50%;
@@ -92,6 +114,7 @@ input[type=submit]{
 .left{
     width: 50%;
 }
+
 }
 .overlay{
     position:absolute;
@@ -120,4 +143,5 @@ input[type=submit]{
     100% {
         opacity: 0;
     }
+}
 }
